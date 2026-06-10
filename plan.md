@@ -1,4 +1,4 @@
-# Recoloca IA - Framework de Orquestração
+# Resume IA - Framework de Orquestração
 
 ## Visão Geral
 
@@ -10,7 +10,7 @@ Todas as personas e skills são projetadas para modelos Mixture of Experts (MoE)
 
 - Sem instruções ambíguas. Cada passo deve especificar exatamente o que fazer, qual ferramenta usar e qual formato de saída produzir.
 - Sem tabelas markdown em nenhuma saída. Use listas numeradas com pares chave-valor para dados estruturados.
-- Todos os caminhos de arquivo devem ser relativos à raiz do projeto com prefixo explícito `data/`. A raiz do projeto é o diretório `recoloca-ia/`.
+- Todos os caminhos de arquivo devem ser relativos à raiz do projeto com prefixo explícito `data/`. A raiz do projeto é o diretório `resume-ia/`.
 - Se uma ferramenta falhar, o agente deve relatar a falha no campo `erros` e não continuar silenciosamente.
 - Nunca invente dados. Se um `firecrawl search` ou `firecrawl scrape` falhar, reporte o erro exato e pare. **Exceção**: Em `skills/course-analysis.md`, se a busca falhar para uma habilidade específica, tente o fallback; se o fallback também falhar, pule essa habilidade e continue com as restantes. Não pare o processamento inteiro por uma única falha de busca de cursos.
 - O agente NÃO deve escrever scripts Python, scripts de shell ou qualquer código para implementar personas. O agente personifica cada papel diretamente através do seu comportamento e respostas conversacionais. Personas são instruções comportamentais, não código a ser gerado.
@@ -44,7 +44,7 @@ Agentes principais: Maestro, Scout, Curator, Coach. Cada um é construído e com
 ## Estrutura de Diretórios
 
 ```
-recoloca-ia/
+resume-ia/
 ├── AGENTS.md                   # Instruções de inicialização para o agente
 ├── personas/
 │   ├── maestro.md          # Orquestrador principal
@@ -66,7 +66,7 @@ recoloca-ia/
 └── README.md                 # Descrição do projeto e instruções de uso (ver esquema no final desta seção)
 ```
 
-**README.md conteúdo esperado:** Breve descrição do projeto Recoloca IA, objetivo do sistema multi-agente, como iniciar (pré-requisitos: Zed, OpenRouter API key, Firecrawl CLI), e estrutura de diretórios resumida.
+**README.md conteúdo esperado:** Breve descrição do projeto Resume IA, objetivo do sistema multi-agente, como iniciar (pré-requisitos: Zed, OpenRouter API key, Firecrawl CLI), e estrutura de diretórios resumida.
 
 ## Agentes (Personas)
 
@@ -553,7 +553,7 @@ Pontuação: [X/10]
 - Explicar o primeiro passo de fluxos de trabalho agênticos: escrever um plano
 - Elaborar o plano do projeto juntos: arquitetura, diretórios, personas, formatos de dados
 - Explicar o conceito de envelopes de despacho/resposta
-- Criar `recoloca-ia/AGENTS.md` com:
+- Criar `resume/AGENTS.md` com:
   ```
   **LEIA E ADOTE IMEDIATAMENTE A PERSONA EM `personas/maestro.md`**
 
