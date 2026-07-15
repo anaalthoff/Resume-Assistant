@@ -45,11 +45,3 @@ Os dados do usuário, resultados do questionário e perfis gerados são armazena
 *   `course-recommendations.md`: Lista os cursos recomendados.
 *   `interview-session.md`: Rastreia o progresso e o histórico das simulações de entrevista.
 *   `job-search-results.md`: Armazena os resultados das buscas de emprego.
-
-## Contribuição
-
-(Esta seção normalmente incluiria diretrizes para contribuir com o projeto, se aplicável.)
-
-## Licença
-
-(Especifique a licença do projeto aqui.)
